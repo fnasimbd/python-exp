@@ -5,6 +5,7 @@ def test_parse_json_string():
     parser = JsonParser()
     parser.parse_json_string('{"name": "john doe"}')
 
+@pytest.mark.xfail(raises=ValueError)
 def test_parse_json_string_fail():
     parser = JsonParser()
     parser.parse_json_string('{"name": john doe"}')
