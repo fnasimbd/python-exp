@@ -4,4 +4,4 @@ python:
 install:
 #  - pip install .
   - pip install -r requirements.txt
-scripts: nosetests
+scripts: make test
